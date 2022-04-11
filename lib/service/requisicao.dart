@@ -5,7 +5,7 @@ import 'package:http/http.dart' as http;
 class Requisicao{
   Future<List> requisicaoPaises() async {
 
-    Map paises = Map();
+    Map paises = {};
 
     Uri apiUrl = Uri(scheme: "https", host: "api.nobelprize.org", path:"v1/country.json");
 

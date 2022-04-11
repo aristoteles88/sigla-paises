@@ -7,12 +7,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'Sigla dos Países',
-      theme: ThemeData(
-        primarySwatch: Colors.orange,
-      ),
-      home: const PaisesScreen(),
+      home: PaisesScreen(),
     );
   }
 }

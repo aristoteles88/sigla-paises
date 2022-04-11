@@ -5,20 +5,19 @@ class Ajuda extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Scaffold(
-        appBar: AppBar(
-          title: const Text("Ajuda"),
-          centerTitle: false,
-        ),
-        body: Column(
-          children: const [
-            Padding(
-              padding: EdgeInsets.all(20.0),
-              child: Text("Este aplicativo tem como objetivo listar e pesquisar as siglas dos paises."),
-            )
-          ],
-        ),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("Ajuda"),
+        backgroundColor: Colors.orangeAccent,
+        centerTitle: false,
+      ),
+      body: Column(
+        children: const [
+          Padding(
+            padding: EdgeInsets.all(20.0),
+            child: Text("Este aplicativo tem como objetivo listar e pesquisar as siglas dos paises."),
+          )
+        ],
       ),
     );
   }
